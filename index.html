@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5f5c3819f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="toggler" id="toggler">
+      <!-- <i class="fas fa-bars" id="bars"></i>
+        <i class="fas fa-ban" id="close"></i> -->
+      <div class="hamburger" id="hamburger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="150"
+          height="150"
+          viewBox="0 0 200 200"
+        >
+          <g stroke-width="6.5" stroke-linecap="round">
+            <path
+              d="M72 82.286h28.75"
+              fill="#009100"
+              fill-rule="evenodd"
+              stroke="#fff"
+            />
+            <path
+              d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+              fill="none"
+              stroke="#fff"
+            />
+            <path
+              d="M72 125.143h28.75"
+              fill="#009100"
+              fill-rule="evenodd"
+              stroke="#fff"
+            />
+            <path
+              d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+              fill="none"
+              stroke="#fff"
+            />
+            <path
+              d="M100.75 82.286h28.75"
+              fill="#009100"
+              fill-rule="evenodd"
+              stroke="#fff"
+            />
+            <path
+              d="M100.75 125.143h28.75"
+              fill="#009100"
+              fill-rule="evenodd"
+              stroke="#fff"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="toggler toggler2" id="toggler2">
+      <!-- <i class="fas fa-bars" id="bars"></i>
+        <i class="fas fa-ban" id="close"></i> -->
+      <div class="hamburger" id="ham2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="150"
+          height="150"
+          viewBox="0 0 200 200"
+        >
+          <g stroke-width="6.5" stroke-linecap="round">
+            <path
+              d="M72 82.286h28.75"
+              fill="#009100"
+              fill-rule="evenodd"
+              stroke="#fff"
+            />
+            <path
+              d="M100.75 103.714l72.482-.143c.043 39.398-32.284 71.434-72.16 71.434-39.878 0-72.204-32.036-72.204-71.554"
+              fill="none"
+              stroke="#fff"
+            />
+            <path
+              d="M72 125.143h28.75"
+              fill="#009100"
+              fill-rule="evenodd"
+              stroke="#fff"
+            />
+            <path
+              d="M100.75 103.714l-71.908-.143c.026-39.638 32.352-71.674 72.23-71.674 39.876 0 72.203 32.036 72.203 71.554"
+              fill="none"
+              stroke="#fff"
+            />
+            <path
+              d="M100.75 82.286h28.75"
+              fill="#009100"
+              fill-rule="evenodd"
+              stroke="#fff"
+            />
+            <path
+              d="M100.75 125.143h28.75"
+              fill="#009100"
+              fill-rule="evenodd"
+              stroke="#fff"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="utilityWrap" id="utilityWrap"></div>
+    <div class="navbar-wrap" id="nav">
+      <div class="navbar">
+        <div class="menu" id="menu">
+          <a href="#page1" id="link1"
+            ><i class="fas fa-home"> </i>menu</a
+          >
+          <a href="#page2" id="link2"
+            ><i class="fas fa-home"> </i>menu</a
+          >
+          <a href="#page3" id="link3"
+            ><i class="fas fa-home"> </i>menu</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="user-wrap" id="user">
+      <div class="userPanel" id="userPanel">
+        <div class="menu" id="userMenu">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <div class="user-text">
+            <ul>
+              <li>nome</li>
+              <li>cognome</li>
+              <a href="">opzioni</a>
+            </ul>
+            <div class="userOther"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="container">
+      <section id="page1">
+        <div class="bottom1">
+          <div class="footer"></div>
+          <div class="footer"></div>
+          <div class="footer"></div>
+        </div>
+        <div class="main1" id="main">
+          <div class="title-wrapper">
+            <h1>Lorem, ipsum.</h1>
+          </div>
+          <h3 id="neon">ciaoooooo</h3>
+        </div>
+        <div class="bottom1">
+          <div class="footer"></div>
+          <div class="footer"></div>
+          <div class="footer"></div>
+        </div>
+      </section>
+      <section id="page2"></section>
+      <section id="page3"></section>
+      <section id="page4"></section>
+      <section id="page5"></section>
+    </div>
+    <script>
+      let toggler = document.getElementById("toggler");
+      let toggler2 = document.getElementById("toggler2");
+      let nav = document.getElementById("nav");
+      let userPanel = document.getElementById("userPanel");
+      let user = document.getElementById("user");
+      let ham = document.getElementById("hamburger");
+      let hamClose = document.getElementById("close");
+      let menu = document.getElementById("menu");
+      let userMenu = document.getElementById("userMenu");
+      let page1 = document.getElementById("page1");
+      let page2 = document.getElementById("page2");
+      let link1 = document.getElementById("link1");
+      let link2 = document.getElementById("link2");
+      let link3 = document.getElementById("link3");
+      let main = document.getElementById("main");
+      let ham2 = document.getElementById("ham2");
+      let utility = document.getElementById("utilityWrap");
+      // let utility2 = document.getElementById("utilityWrap2");
+      window.onload = function () {
+        page1.classList.add("visible");
+      };
+
+      function openNav() {
+        nav.classList.toggle("expand");
+        toggler.classList.toggle("togglerActive");
+        menu.classList.toggle("display");
+        ham.classList.toggle("active");
+        // utility.classList.toggle("display");
+      }
+      function closeNav() {
+        toggler.classList.remove("togglerActive");
+        nav.classList.remove("expand");
+        ham.classList.remove("active");
+        menu.classList.remove("display");
+        utility.classList.remove("display");
+      }
+      function openUser() {
+        user.classList.toggle("expand");
+        toggler2.classList.toggle("togglerActive");
+        ham2.classList.toggle("active");
+        // utility.classList.toggle("display");
+        userMenu.classList.toggle("display");
+      }
+
+      function closeUser() {
+        userPanel.classList.remove("expand");
+        toggler2.classList.remove("togglerActive");
+        ham2.classList.remove("active");
+        user.classList.remove("expand");
+        userMenu.classList.remove("display");
+        utility.classList.remove("display");
+      }
+      function displayUtility() {
+        utility.classList.add("display");
+      }
+      toggler.addEventListener("click", function () {
+        closeUser();
+        openNav();
+        utility.classList.add("display");
+      });
+
+      toggler2.addEventListener("click", function () {
+        openUser();
+        closeNav();
+        utility.classList.add("display");
+      });
+
+      utility.addEventListener("click", function () {
+        closeNav();
+        closeUser();
+        utility.classList.remove("display");
+      });
+      let dropdown = document.getElementById("dropdown");
+      let hidden = document.getElementById("hidden");
+
+      link1.addEventListener("click", function () {
+        console.log("ccc");
+        page1.classList.add("visible");
+        page2.classList.remove("visible");
+        page3.classList.remove("visible");
+      });
+      link2.addEventListener("click", function () {
+        page2.classList.add("visible");
+        page1.classList.remove("visible");
+        page3.classList.remove("visible");
+      });
+      link3.addEventListener("click", function () {
+        page3.classList.add("visible");
+        page1.classList.remove("visible");
+        page2.classList.remove("visible");
+      });
+      // page2.addEventListener("click",function(){
+
+      // }
+      // )
+      // let randomColor = Math.floor(
+      //   Math.random() * 16777215
+      // ).toString(16);
+      // let page1 = document.getElementById("page1");
+      // let page2 = document.getElementById("page2");
+      // let page3 = document.getElementById("page3");
+      // let page4 = document.getElementById("page4");
+      // let pageArray = [page1, page2, page3, page4];
+      // function setColor() {
+      //   let randomColor = Math.floor(
+      //     Math.random() * 16777215
+      //   ).toString(16);
+      //   return randomColor;
+      // }
+      // document.getElementById("page").style.backgroundColor =
+      //   "#" + randomColor;
+    </script>
+  </body>
+</html>
+<!DOCTYPE html>
